@@ -1,0 +1,34 @@
+POST http://localhost:8000/student
+Content-Type: application/json
+
+{
+    "name":"Sia O",
+    "subject":"Vicha tid F",
+    "score":99
+}
+
+###
+GET http://localhost:8000/student
+
+###
+GET http://localhost:8000/student/Tuuuu
+
+###
+PUT http://localhost:8000/student/update/14
+Content-Type: application/json
+
+{
+    "name":"O"
+}
+
+###
+DELETE http://localhost:8000/student/delete/14
+
+###
+PATCH http://localhost:8000/student/recover/14
+
+###
+GET http://localhost:8000/subject/grade/
+
+###
+GET http://localhost:8000/subject/grade/localhost:8000/subject/grade/Tuuuu

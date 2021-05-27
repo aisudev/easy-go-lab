@@ -26,9 +26,9 @@ func main() {
 	e.POST("/student", controllers.CreateStudentScore)
 	e.GET("/student/:name", controllers.GetStudentScore)
 	e.GET("/student", controllers.GetAllStudentScore)
-	e.PATCH("/student/:id", controllers.UpdateStudentScore)
-	e.DELETE("/student/:id", controllers.DeleteStudentScore)
-	e.PATCH("/student/:id/recover", controllers.RecoverStudentScore)
+	e.PUT("/student/update/:id", controllers.UpdateStudentScore)
+	e.DELETE("/student/delete/:id", controllers.DeleteStudentScore)
+	e.PATCH("/student/recover/:id", controllers.RecoverStudentScore)
 
 	e.GET("/subject/grade/", controllers.GetSubjectGrade)
 	e.GET("/subject/grade/:name", controllers.GetSubjectGradeByStudentName)

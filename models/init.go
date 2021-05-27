@@ -12,7 +12,6 @@ var SQLiteDB *gorm.DB
 
 // InitialDatabase : Initial database function to connect with DBMS
 func InitialDatabase() error {
-	fmt.Println("wowowowowoww")
 	var err error
 	SQLiteDB, err = gorm.Open(sqlite.Open("database/lab.db"), &gorm.Config{})
 	if err != nil {
